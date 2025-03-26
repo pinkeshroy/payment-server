@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
-app.get("/data", (req,res)={
+app.get("/data", (req,res)=>{
   res.status(200).send("Hello from AWS shell");
 });
 app.use("/", routes);
