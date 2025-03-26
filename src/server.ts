@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
-import connectDB from "./config/database";
-import routes from "./routes";
+// import connectDB from "./config/database";
+// import routes from "./routes";
 import cors from "cors"
 dotenv.config();
 
@@ -12,7 +12,7 @@ app.use(cors({ origin: true }));
 app.get("/data", (req,res)=>{
   res.status(200).send("Hello from AWS shell");
 });
-app.use("/", routes);
+// app.use("/", routes);
 const PORT = process.env.PORT || 3000;
 
 
